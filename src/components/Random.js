@@ -1,4 +1,4 @@
-import React, { Children } from "react"; 
+import React from "react"; 
 
 function Random ({min, max}) {
    const randomNumber = Math.floor(Math.random()* max);
