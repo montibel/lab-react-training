@@ -1,10 +1,17 @@
 import React from "react"; 
 
-function IdCard () {
+function IdCard ({ firstName, lastName, gender, picture, height, birth}) {
     return(
-    <div>
-        <h1>Testing</h1>
-    </div>
+    <div class="idcard">
+        
+        <img src= {picture} alt=""/> 
+        <p> <b>First name:</b> {firstName} </p>
+        <p> <b>Last name:</b> {lastName} </p>
+        <p> <b>Gender:</b> {gender} </p>
+        <p> <b>Height:</b> {height}</p>
+        <p> <b>Birth:</b> {birth.toDateString()}</p>
+        
+   </div>
   ); 
 }
 
